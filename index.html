@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PropertyHub | Property Rental and Management</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="logo">Property<span>Hub.</span></a>
+
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#properties">Properties</a>
+                <a href="#about">About Us</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="nav-buttons">
+                <a href="login.html" class="login-btn">Log In</a>
+                <a href="register.html" class="signup-btn">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <p class="eyebrow">YOUR PROPERTY, OUR PRIORITY</p>
+
+            <h1>Find a Place You'll<br>Love to Call Home.</h1>
+
+            <p class="hero-description">
+                Discover rental properties and enjoy a simpler,
+                more convenient property management experience.
+            </p>
+
+            <a href="#properties" class="primary-btn">Explore Properties</a>
+        </div>
+    </section>
+
+    <!-- SEARCH SECTION -->
+    <section class="search-section">
+        <div class="container search-box">
+            <div>
+                <label for="locationSearch">Location or Property</label>
+                <input type="text" id="locationSearch"
+                    placeholder="Enter location or property name">
+            </div>
+
+            <div>
+                <label for="propertyType">Property Type</label>
+                <select id="propertyType">
+    <option value="all">All Properties</option>
+    <option value="apartment">Apartment</option>
+    <option value="condominium">Condominium</option>
+    <option value="studio">Studio-Type Room</option>
+    <option value="dormitory">Dormitory</option>
+</select>
+            </div>
+
+            <button type="button" id="searchBtn" class="primary-btn">
+                Search
+            </button>
+        </div>
+    </section>
+
+    <!-- STATISTICS -->
+    <section class="statistics">
+        <div class="container stats-grid">
+            <div><h2>Properties</h2><p>Discover available rentals</p></div>
+            <div><h2>Tenants</h2><p>Convenient tenant services</p></div>
+            <div><h2>Leases</h2><p>Organized lease information</p></div>
+            <div><h2>Management</h2><p>Simplified property management</p></div>
+        </div>
+    </section>
+
+    <!-- FEATURED PROPERTIES -->
+    <section class="section" id="properties">
+        <div class="container">
+            <div class="section-heading">
+                <p class="eyebrow">FIND YOUR NEXT HOME</p>
+                <h2>Featured Properties</h2>
+                <p>Explore some of our sample rental listings.</p>
+            </div>
+
+            <div class="property-grid">
+
+               
+<article class="property-card"
+    data-location="imus cavite"
+    data-type="apartment"
+    data-name="cozy apartment">
+
+    <div class="property-image property-one"></div>
+
+    <div class="property-info">
+        <span class="property-type">Apartment</span>
+        <h3>Cozy Apartment</h3>
+        <p>Imus, Cavite</p>
+        <div class="property-bottom">
+            <strong>₱12,000 <small>/ month</small></strong>
+            <a href="login.html">View Details</a>
+        </div>
+    </div>
+</article>
+
+<article class="property-card"
+    data-location="bacoor cavite"
+    data-type="condominium"
+    data-name="modern condominium">
+
+    <div class="property-image property-two"></div>
+
+    <div class="property-info">
+        <span class="property-type">Condominium</span>
+        <h3>Modern Condominium</h3>
+        <p>Bacoor, Cavite</p>
+        <div class="property-bottom">
+            <strong>₱15,000 <small>/ month</small></strong>
+            <a href="login.html">View Details</a>
+        </div>
+    </div>
+</article>
+
+<article class="property-card"
+    data-location="dasmarinas cavite"
+    data-type="studio"
+    data-name="modern studio room">
+
+    <div class="property-image property-three"></div>
+
+    <div class="property-info">
+        <span class="property-type">Studio-Type Room</span>
+        <h3>Modern Studio Room</h3>
+        <p>Dasmariñas, Cavite</p>
+        <div class="property-bottom">
+            <strong>₱7,000 <small>/ month</small></strong>
+            <a href="login.html">View Details</a>
+        </div>
+    </div>
+</article>
+
+<article class="property-card"
+    data-location="dasmarinas cavite"
+    data-type="dormitory"
+    data-name="student dormitory">
+
+    <div class="property-image property-four"></div>
+
+    <div class="property-info">
+        <span class="property-type">Dormitory</span>
+        <h3>Student Dormitory</h3>
+        <p>Dasmariñas, Cavite</p>
+        <div class="property-bottom">
+            <strong>₱3,500 <small>/ month</small></strong>
+            <a href="login.html">View Details</a>
+        </div>
+    </div>
+</article>
+
+
+                <article class="property-card" data-location="dasmarinas cavite"
+                    data-type="house" data-name="family house">
+                    <div class="property-image property-two"></div>
+                    <div class="property-info">
+                        <span class="property-type">House</span>
+                        <h3>Family House</h3>
+                        <p>Dasmariñas, Cavite</p>
+                        <div class="property-bottom">
+                            <strong>₱18,000 <small>/ month</small></strong>
+                            <a href="login.html">View Details</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="property-card" data-location="bacoor cavite"
+                    data-type="condominium" data-name="modern condo">
+                    <div class="property-image property-three"></div>
+                    <div class="property-info">
+                        <span class="property-type">Condominium</span>
+                        <h3>Modern Condo</h3>
+                        <p>Bacoor, Cavite</p>
+                        <div class="property-bottom">
+                            <strong>₱15,000 <small>/ month</small></strong>
+                            <a href="login.html">View Details</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+            <p id="noResults" class="no-results" hidden>
+                No matching properties found.
+            </p>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section services-section" id="services">
+        <div class="container">
+            <div class="section-heading">
+                <p class="eyebrow">WHAT WE OFFER</p>
+                <h2>Our Services</h2>
+                <p>Everything you need for a better rental experience.</p>
+            </div>
+
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-icon">⌂</div>
+                    <h3>Property Listings</h3>
+                    <p>Browse available rental properties in one convenient place.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">▤</div>
+                    <h3>Lease Management</h3>
+                    <p>Keep lease information and rental agreements organized.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">₱</div>
+                    <h3>Payment Monitoring</h3>
+                    <p>Make rental payment records easier to monitor.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">⚒</div>
+                    <h3>Maintenance Requests</h3>
+                    <p>Help tenants report property concerns and repair needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about-section" id="about">
+        <div class="container about-content">
+            <div>
+                <p class="eyebrow">ABOUT PROPERTYHUB</p>
+                <h2>Making Property Rental Simpler.</h2>
+                <p>
+                    PropertyHub is designed to make property rental
+                    and management more organized and convenient.
+                    It provides a central platform for property
+                    listings, tenant information, lease records,
+                    payments, and maintenance requests.
+                </p>
+                <a href="#contact" class="primary-btn">Learn More</a>
+            </div>
+
+            <div class="about-image"></div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Find Your Next Home?</h2>
+            <p>Start exploring rental properties with PropertyHub.</p>
+            <a href="#properties" class="light-btn">Browse Properties</a>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact">
+        <div class="container section-heading">
+            <p class="eyebrow">GET IN TOUCH</p>
+            <h2>Contact Us</h2>
+            <p>Have questions? We'd be happy to hear from you.</p>
+
+            <div class="contact-details">
+                <p><strong>Email:</strong> info@propertyhub.com</p>
+                <p><strong>Location:</strong> Cavite, Philippines</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="index.html" class="logo">Property<span>Hub.</span></a>
+            <p>© 2026 PropertyHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

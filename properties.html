@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties | PropertyHub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container navbar">
+        <a href="index.html" class="logo">Property<span>Hub.</span></a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="properties.html">Properties</a>
+            <a href="index.html#about">About Us</a>
+            <a href="index.html#services">Services</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+
+        <div class="nav-buttons">
+            <a href="login.html" class="login-btn">Log In</a>
+            <a href="register.html" class="signup-btn">Sign Up</a>
+        </div>
+    </div>
+</header>
+
+<section class="properties-banner">
+    <div class="container">
+        <p class="eyebrow">FIND YOUR NEXT HOME</p>
+        <h1>Explore Rental Properties</h1>
+        <p>Find apartments, condominiums, studio rooms, and dormitories.</p>
+    </div>
+</section>
+
+<main class="section">
+    <div class="container">
+
+        <div class="section-heading">
+            <h2>Available Properties</h2>
+            <p>Browse and find a rental space that suits your needs.</p>
+        </div>
+
+        <div class="property-filters">
+            <input type="text" id="locationSearch"
+                placeholder="Search by location or property name">
+
+            <select id="propertyType">
+                <option value="all">All Property Types</option>
+                <option value="apartment">Apartment</option>
+                <option value="condominium">Condominium</option>
+                <option value="studio">Studio-Type Room</option>
+                <option value="dormitory">Dormitory</option>
+            </select>
+
+            <button type="button" id="searchBtn" class="primary-btn">
+                Search
+            </button>
+        </div>
+
+        <p id="propertyCount" class="property-count"></p>
+
+        <div class="property-grid">
+
+            <article class="property-card"
+                data-location="imus cavite"
+                data-type="apartment"
+                data-name="cozy apartment">
+                <div class="property-image property-one"></div>
+                <div class="property-info">
+                    <span class="property-type">Apartment</span>
+                    <h3>Cozy Apartment</h3>
+                    <p>Imus, Cavite</p>
+                    <div class="property-bottom">
+                        <strong>₱12,000 <small>/ month</small></strong>
+                        <a href="login.html">View Details</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="property-card"
+                data-location="bacoor cavite"
+                data-type="condominium"
+                data-name="modern condominium">
+                <div class="property-image property-two"></div>
+                <div class="property-info">
+                    <span class="property-type">Condominium</span>
+                    <h3>Modern Condominium</h3>
+                    <p>Bacoor, Cavite</p>
+                    <div class="property-bottom">
+                        <strong>₱15,000 <small>/ month</small></strong>
+                        <a href="login.html">View Details</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="property-card"
+                data-location="dasmarinas cavite"
+                data-type="studio"
+                data-name="modern studio room">
+                <div class="property-image property-three"></div>
+                <div class="property-info">
+                    <span class="property-type">Studio-Type Room</span>
+                    <h3>Modern Studio Room</h3>
+                    <p>Dasmariñas, Cavite</p>
+                    <div class="property-bottom">
+                        <strong>₱7,000 <small>/ month</small></strong>
+                        <a href="login.html">View Details</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="property-card"
+                data-location="dasmarinas cavite"
+                data-type="dormitory"
+                data-name="student dormitory">
+                <div class="property-image property-four"></div>
+                <div class="property-info">
+                    <span class="property-type">Dormitory</span>
+                    <h3>Student Dormitory</h3>
+                    <p>Dasmariñas, Cavite</p>
+                    <div class="property-bottom">
+                        <strong>₱3,500 <small>/ month</small></strong>
+                        <a href="login.html">View Details</a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <p id="noResults" class="no-results" hidden>
+            No matching properties found.
+        </p>
+
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container footer-content">
+        <a href="index.html" class="logo">Property<span>Hub.</span></a>
+        <p>© 2026 PropertyHub. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="js/properties.js"></script>
+</body>
+</html>
